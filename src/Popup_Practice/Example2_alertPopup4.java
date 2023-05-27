@@ -29,7 +29,7 @@ public class Example2_alertPopup4
 		
 		alt.sendKeys("bhushan patil");
 		
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		
 	    alt.accept();
 		
