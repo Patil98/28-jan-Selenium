@@ -12,12 +12,13 @@ public class Example3_getData1
 		driver.get("https://demo.guru99.com/test/web-table-element.php");
 		
 		Thread.sleep(2000);
-      String text = driver.findElement(By.xpath("//table[@class='dataTable']//tr[3]/td[1]")).getText();
+      String text = driver.findElement(By.xpath("//table[@class='dataTable']//tr[26]/td[1]")).getText();
 		System.out.println(text);
 		
 		Thread.sleep(2000);
 		
-		String tex = driver.findElement(By.xpath("//table[@class='dataTable']//tr[1]/td[3]")).getText();
+		//header
+		String tex = driver.findElement(By.xpath("//table[@class='dataTable']//tr[1]/th[3]")).getText();
 		System.out.println(tex);
 		
 		

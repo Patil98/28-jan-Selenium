@@ -17,6 +17,8 @@ public class Example3_switchToChildWindow1
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.in/");
 		
+		
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]")).sendKeys("asian shoes");

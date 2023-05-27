@@ -2,6 +2,7 @@ package Popup_Practice;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -28,9 +29,26 @@ public class Example3_switchToChildWindow2
 		
 		String all = driver.getWindowHandle();
 	
-		driver.switchTo().window(all);
+		Thread.sleep(1000);
 		
-		//driver.findElement(By.xpath("(//img[@loading='eager'])[1]")).click();
+		Set<String> get = driver.getWindowHandles();
+	    ArrayList<String> b=new ArrayList<String>(get);
+	        
+	        
+	     driver.switchTo().window(b.get(1));
+	     Thread.sleep(1000);
+	     
+	     driver.findElement(By.xpath("//button[text()='Add to cart']")).click();
+	     Thread.sleep(3000);
+	     
+	     driver.switchTo().window(b.get(0));
+	     
+	     Thread.sleep(3000);
+	     
+	     driver.findElement(By.xpath("(//div[@class='CXW8mj'])[3]")).click();
+	     
+	 
+	   
 		
 		
 		
