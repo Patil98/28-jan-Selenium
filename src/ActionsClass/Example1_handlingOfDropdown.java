@@ -28,8 +28,8 @@ public class Example1_handlingOfDropdown
 		
 		Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("//*[@id=\"nav_prefetch_yourorders\"]/span")).click();
-		
+       driver.findElement(By.xpath("//*[@id=\"nav_prefetch_yourorders\"]/span")).click();
+	
 		
 	}
 

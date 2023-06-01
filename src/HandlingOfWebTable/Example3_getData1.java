@@ -18,7 +18,7 @@ public class Example3_getData1
 		Thread.sleep(2000);
 		
 		//header
-		String tex = driver.findElement(By.xpath("//table[@class='dataTable']//tr[1]/th[3]")).getText();
+		String tex = driver.findElement(By.xpath("//table[@class='dataTable']//tr[1]/th[5]")).getText();
 		System.out.println(tex);
 		
 		

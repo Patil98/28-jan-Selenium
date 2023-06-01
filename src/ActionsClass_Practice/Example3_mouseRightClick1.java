@@ -12,17 +12,12 @@ public class Example3_mouseRightClick1
 	{
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://demo.guru99.com/test/simple_context_menu.html");
-		
-		WebElement rclick = driver.findElement(By.xpath("//*[@id=\"authentication\"]/span"));
+		Thread.sleep(2000);
+		WebElement rclick = driver.findElement(By.xpath("//span[text()='right click me']"));
 		
 		Actions act=new Actions(driver);
-		
-		Thread.sleep(1000);
-		
+		Thread.sleep(2000);
 		act.contextClick(rclick).perform();
-		
-		
-		
 	}
 
 }

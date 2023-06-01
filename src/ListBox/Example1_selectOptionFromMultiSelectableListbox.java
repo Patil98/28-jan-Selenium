@@ -26,7 +26,6 @@ public class Example1_selectOptionFromMultiSelectableListbox
 		s.selectByIndex(0);
 		s.selectByVisibleText("Aus");
 		s.selectByValue("2");
-		
 	}
 	
 	

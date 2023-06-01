@@ -33,7 +33,6 @@ public class Example1_selectOptionFromSingleSelectableListbox1
 		Select s=new Select(day);
 		Thread.sleep(2000);
 		Select s1=new Select(month);
-		
 		Thread.sleep(2000);
 		Select s2=new Select(year);
 		
@@ -44,11 +43,11 @@ public class Example1_selectOptionFromSingleSelectableListbox1
 		
 		
 		
-        // s.selectByIndex(21);
+         s.selectByIndex(21);
          //s.selectByValue("22");
          
          Thread.sleep(2000);  
-        // s1.selectByVisibleText("Mar");
+         s1.selectByVisibleText("Mar");
 		
 
 	}

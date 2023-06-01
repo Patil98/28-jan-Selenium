@@ -27,7 +27,6 @@ public class Example4_getSelectedOptionFrom_singleSelectableListbox
 		s.selectByIndex(2);
 		
 		String string = s.getFirstSelectedOption().getText();
-		
 		System.out.println(string);
 	}
 

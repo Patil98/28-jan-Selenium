@@ -19,7 +19,8 @@ public class Example1_getStringData
 		             //diffclassname.methodname  
 		 String data = WorkbookFactory.create(file).getSheet("Sheet1").getRow(0).getCell(0).getStringCellValue();
 		 System.out.println(data);
-		 
+			 
 	}
-
+ 
+		
 }

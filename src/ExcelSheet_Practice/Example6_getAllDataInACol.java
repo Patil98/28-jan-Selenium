@@ -18,9 +18,9 @@ public class Example6_getAllDataInACol
 		
 		for(int i=0; i<=lastrowindex; i++)
 		{
-			String value = sh.getRow(i).getCell(0).getStringCellValue();		
+			String value = sh.getRow(i).getCell(0).getStringCellValue();
 			System.out.println(value);
-			
 		}
+		
 	}
 }

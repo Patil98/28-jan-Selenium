@@ -28,7 +28,6 @@ public class Example1_handlingOfDropdown1
 	      act.moveToElement(list).perform();
 	     	Thread.sleep(2000);
 	      
-	      
 	      driver.findElement(By.xpath("//a[text()='Wired Headphones']")).click();
 	      
 	                                   

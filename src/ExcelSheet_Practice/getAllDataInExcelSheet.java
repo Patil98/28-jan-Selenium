@@ -14,7 +14,7 @@ public class getAllDataInExcelSheet
 	public static void main(String[] args) throws EncryptedDocumentException, IOException 
 	{
 		FileInputStream file=new FileInputStream("C:\\Users\\bvp13\\OneDrive\\Documents\\data.xlsx");
-		Sheet sh = WorkbookFactory.create(file).getSheet("Sheet1");
+		Sheet sh = WorkbookFactory.create(file).getSheet("sheet1");
 		int lastrowindex = sh.getLastRowNum();
 		
 		for(int i=0; i<=lastrowindex; i++)
@@ -23,10 +23,11 @@ public class getAllDataInExcelSheet
 			for(int j=0; j<=lastcellindex; j++)
 			{
 				String value = sh.getRow(i).getCell(j).getStringCellValue();
-				System.out.print(value+" |  ");
+				System.out.print(value+" ");
 			}
-			System.out.println();
+			System.out.println( );
 		}
+		
 		
 	}
 }

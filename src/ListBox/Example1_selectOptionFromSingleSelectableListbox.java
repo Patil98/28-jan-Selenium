@@ -28,7 +28,8 @@ public class Example1_selectOptionFromSingleSelectableListbox
 		Select s=new Select(month);
 		
 		//step 3
-		//s.selectByVisibleText("Mar");          //String 
+		s.selectByVisibleText("Mar");          //String 
+		Thread.sleep(2000);
 		s.selectByValue("11");           //String value
 		//s.selectByIndex(5);              //int index
 		

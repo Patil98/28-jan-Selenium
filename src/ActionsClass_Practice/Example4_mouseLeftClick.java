@@ -15,16 +15,20 @@ public class Example4_mouseLeftClick
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.in/");
-		
 		Thread.sleep(2000);
 		
-		WebElement ele = driver.findElement(By.xpath("//*[@id=\"nav-xshop\"]/a[8]"));
+		WebElement lclick = driver.findElement(By.xpath("//img[@alt='Refrigerators']"));
 		
 		Actions act=new Actions(driver);
-		
 		Thread.sleep(2000);
+		act.click(lclick).perform();
 		
-		act.click(ele).perform();
+		
+		
+		
+		
+		
+		
 		
 	}
 
