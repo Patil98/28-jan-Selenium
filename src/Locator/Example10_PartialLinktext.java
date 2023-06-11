@@ -16,7 +16,6 @@ public class Example10_PartialLinktext
 		// click on link
 		driver.findElement(By.partialLinkText("iles")).click();
 		
-		
 	
 }
 }

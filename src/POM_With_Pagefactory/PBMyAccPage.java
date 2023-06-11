@@ -9,17 +9,17 @@ import org.openqa.selenium.support.PageFactory;
 public class PBMyAccPage 
 {
 	
-	@FindBy(xpath="//span[text()=' My profile ']") private WebElement myProfile;
+	@FindBy(xpath="//span[text()=' My profile ']") private WebElement MyProfile;
 	
 
-	PBMyAccPage(WebDriver driver)
+	public 	PBMyAccPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void ClickOnMyProfile()
+	public void clickPBMyAccPageMyProfile()
 	{
-		myProfile.click();
+		MyProfile.click();
 	}
 	
 }

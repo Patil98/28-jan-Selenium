@@ -13,13 +13,13 @@ public class PBHomePage
 	@FindBy(xpath="//div[text()='My Account']") private WebElement MyAcc;
 	WebDriver driver1;
 	
-	PBHomePage(WebDriver driver)
+	public PBHomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 		driver1=driver;
 	}
 	
-	public void openMyAccDropDownOptions()
+	public void openDDOptionPBHomePageMyAcc()
 	{
 		Actions act=new Actions(driver1);
 		act.moveToElement(MyAcc).perform();	

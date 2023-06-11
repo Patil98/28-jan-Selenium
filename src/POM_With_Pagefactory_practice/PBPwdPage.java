@@ -8,28 +8,24 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PBPwdPage
 {
-	
-	@FindBy(xpath="//input[@name='password']") private WebElement Pwd;
-	@FindBy(xpath="//span[text()='Sign in']") private WebElement SignIn;
-	
-	PBPwdPage(WebDriver driver)
-	{
-		PageFactory.initElements(driver, this);
-	}
-	
-	public void EnterPwd()
-	{
-		Pwd.sendKeys("bhushan98");
-	}
-	
-	public void ClickOnSignIn()
-	{
-		SignIn.click();
-	}
+	@FindBy(xpath="//input[@name='password']") private WebElement pwd;
+	@FindBy(xpath="//span[text()='Sign in']") private WebElement signin;
 	
 	
+ public  PBPwdPage(WebDriver driver)
+ {
+	 PageFactory.initElements(driver, this);
+ }
 	
-	
-	
-	
+ public void enterpwd()
+ {
+	 pwd.sendKeys("bhushan98");
+ }
+ 
+ public void clickonsigninbtn()
+ {
+	 signin.click();
+ }
+ 
+ 
 }

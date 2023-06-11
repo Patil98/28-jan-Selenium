@@ -1,5 +1,6 @@
 package POM_With_Pagefactory_practice;
 
+import org.apache.poi.hslf.model.textproperties.ParagraphFlagsTextProp;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,15 +11,21 @@ public class PBLoginPage
 {
 	@FindBy(xpath="//a[text()='Sign in']") private WebElement signin;
 	
-	
-	PBLoginPage(WebDriver driver)
+	public PBLoginPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickonsignin()
+	public void clickonsigninbtn()
 	{
 		signin.click();
 	}
-
+	
+	
+	
+	
+	
+	
+	
+	
 }

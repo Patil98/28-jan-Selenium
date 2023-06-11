@@ -21,10 +21,9 @@ public class Example4_sendkeyinMultipletextboxes
 		
 		System.out.println(alltextbox.size());
 		alltextbox.get(0).sendKeys("bhushan");
-		
 		Thread.sleep(5000);
-		
 		alltextbox.get(1).sendKeys("patil");
+		
 		
 		
 		

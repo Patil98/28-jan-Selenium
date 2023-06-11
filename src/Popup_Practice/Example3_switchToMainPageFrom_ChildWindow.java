@@ -25,6 +25,8 @@ public class Example3_switchToMainPageFrom_ChildWindow
      driver.findElement(By.xpath("/html/body/p/a")).click();
      
      
+     String all = driver.getWindowHandle();
+     
      // get child window id
      Set<String> allid = driver.getWindowHandles();
      ArrayList<String> a1=new ArrayList<String>(allid);
@@ -38,11 +40,10 @@ public class Example3_switchToMainPageFrom_ChildWindow
      driver.findElement(By.xpath("/html/body/form/table/tbody/tr[6]/td[2]/input")).click();
      
     
-     
     //switch to main window
-     driver.switchTo().window(a1.get(0));
+     driver.switchTo().window(all);
      
-     driver.close();
+    // driver.close();
 		
 	}
 

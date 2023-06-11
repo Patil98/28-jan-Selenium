@@ -17,32 +17,31 @@ public class PBLoginTest
 		
 		
 		PBLoginPage login=new PBLoginPage(driver);
-		login.clickOnSignInBtn();
+		login.clickPBLoginPageSignIN();
 		
 		PBMobNumPage mobnum=new PBMobNumPage(driver);
-		mobnum.enterMobNum();
-		mobnum.clickOnSignInWithPwdBtn();
+		mobnum.inpPBMobNumPageMobNum();
+		mobnum.clickPBMobNumPageSignInWithPwd();
 		Thread.sleep(2000);
 		
 		PBPwdPage pwd=new PBPwdPage(driver);
-		pwd.enterPwd();
-		pwd.clickonSignInBtn();
+		pwd.inpPBPwdPagePWD();
+		pwd.clickPBPwdPageSignIn();
 		Thread.sleep(2000);
 		
 		PBHomePage home=new PBHomePage(driver);
-		home.openMyAccDropDownOptions();
+		home.openDDOptionPBHomePageMyAcc();
 		Thread.sleep(2000);
 		
-		PBMyAccPage MyAcc=new PBMyAccPage(driver);
-		MyAcc.ClickOnMyProfile();
+		PBMyAccPage  acc=new  PBMyAccPage(driver);
+		acc.clickPBMyAccPageMyProfile();
 		Thread.sleep(2000);
 		
 		 PBProfilePage profile=new  PBProfilePage(driver);
 		 profile.SwitchToSwitchChildWindow();
-		 profile.VarifyFullName();
-		 Thread.sleep(3000);
-		
-		
+		 profile.verifyPBProfilePageFullName();
+			Thread.sleep(2000);
+			
 		 driver.quit();	
 		
 		

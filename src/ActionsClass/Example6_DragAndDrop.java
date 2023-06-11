@@ -20,7 +20,7 @@ public class Example6_DragAndDrop
 		
 		Actions act=new Actions(driver);
 		
-		
+		//act.dragAndDropBy(src, 500, 15).perform();
 		act.dragAndDrop(src, dest).perform();
 		
 	   //act.moveToElement(src).clickAndHold().moveToElement(dest).release().perform();

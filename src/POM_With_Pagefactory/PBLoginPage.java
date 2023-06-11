@@ -14,24 +14,28 @@ public class PBLoginPage
 	
 	
 //step2: initialization
-PBLoginPage(WebDriver driver)
+public  PBLoginPage(WebDriver driver)
 {
 	PageFactory.initElements(driver, this);          //diffClassName.methodname(webDriver_Object, this_Keyword);
 }
 	
 //step3: usage
-public void clickOnSignInBtn()
+public void clickPBLoginPageSignIN()
 {
 	 signIN.click();
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
 	
 }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

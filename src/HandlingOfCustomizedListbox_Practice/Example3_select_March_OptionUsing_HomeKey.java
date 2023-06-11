@@ -39,7 +39,6 @@ public class Example3_select_March_OptionUsing_HomeKey
 		
 		act.sendKeys(Keys.ENTER).perform();
 		
-		
 	}
 
 }

@@ -1,6 +1,7 @@
 package POM_With_Pagefactory_practice;
 //pom class 4
 
+import org.apache.poi.hslf.model.textproperties.ParagraphFlagsTextProp;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -9,23 +10,20 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PBHomePage 
 {
-	@FindBy(xpath="//div[text()='My Account']") private WebElement MyAcc;
+	@FindBy(xpath="//div[text()='My Account']") private WebElement myacc;
 	WebDriver driver1;
 	
-	PBHomePage(WebDriver driver)
+	public PBHomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 		driver1=driver;
 	}
 	
-	public void OpenMyAccDropDownOptions()
+	public void openmyaccdropdown()
 	{
 		Actions act=new Actions(driver1);
-	   act.moveToElement(MyAcc).perform();
+		act.moveToElement(myacc).perform();
 	}
-	
-	
-	
 	
 
 }

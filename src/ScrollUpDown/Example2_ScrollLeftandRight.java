@@ -25,6 +25,7 @@ public class Example2_ScrollLeftandRight
 		
 		//left scroll
 		((JavascriptExecutor)driver).executeScript("window.scrollBy(-10000,0)");
+	
 		
 	}
 

@@ -12,17 +12,17 @@ public class PBPwdPage
 @FindBy(xpath="//input[@name='password']")private WebElement pwd;
 @FindBy(xpath="//span[text()='Sign in']")private WebElement SignIn;
 
-PBPwdPage(WebDriver driver)
+public PBPwdPage(WebDriver driver)
 {
 	PageFactory.initElements(driver, this);
 }
 
-public void enterPwd()
+public void  inpPBPwdPagePWD()
 {
 	pwd.sendKeys("bhushan98");
 }
 
-public void clickonSignInBtn()
+public void clickPBPwdPageSignIn()
 {
 	SignIn.click();
 }

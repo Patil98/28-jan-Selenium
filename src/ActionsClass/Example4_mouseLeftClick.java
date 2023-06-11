@@ -20,19 +20,18 @@ public class Example4_mouseLeftClick
 		
 		Thread.sleep(2000);
 		
-		WebElement cart = driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/div[1]/div[2]/div[6]/div/div/a/span"));
+		//WebElement cart = driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/div[1]/div[2]/div[6]/div/div/a/span"));
 
 		Actions act=new Actions(driver);
 		
 	//	act.moveToElement(cart).perform();
 	//	act.click().perform();
 		
-	//	act.moveToElement(cart).click().perform();
+	//	act.moveToElement(cart).click().perform();      ---without parameter click method
 		
-		act.click(cart).perform();
+		//act.click(cart).perform();                      ---with parameter click method
 		
-		
-		
+		act.click(driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/div[1]/div[2]/div[6]/div/div/a/span"))).perform();	
 		
 		
 	}

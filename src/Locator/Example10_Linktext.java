@@ -14,7 +14,8 @@ public class Example10_Linktext
 		
 		Thread.sleep(2000);
 		
-		driver.findElement(By.linkText("Best Sellers")).click();
+		//driver.findElement(By.linkText("Best Sellers")).click();
+		driver.findElement(By.partialLinkText("Best")).click();
 		
 		
 		

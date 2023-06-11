@@ -26,9 +26,9 @@ public class Example5_mouseDoubleClick
 	//	act.moveToElement(doubleclick).perform();
 	//	act.doubleClick().perform();
 		
-	//	act.moveToElement(doubleclick).doubleClick().perform();
+	//	act.moveToElement(doubleclick).doubleClick().perform();    --->> double click without using parameter
 		
-		act.doubleClick(doubleclick).perform();
+		act.doubleClick(doubleclick).perform();     // --->> double click without using parameter
 		
 		
 	}

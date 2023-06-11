@@ -16,7 +16,7 @@ public class PBProfilePage
 	WebDriver driver1;
 	
 	
-	PBProfilePage(WebDriver driver)
+	public 	PBProfilePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 		driver1=driver;
@@ -29,7 +29,7 @@ public class PBProfilePage
 		driver1.switchTo().window(a.get(1));	
 	}
 	
-	public void VarifyFullName()
+	public void verifyPBProfilePageFullName()
 	{
 		String actname = fullname.getAttribute("value");
 		String extname="bhushan patil";

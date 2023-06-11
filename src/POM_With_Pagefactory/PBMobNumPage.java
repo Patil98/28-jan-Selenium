@@ -12,18 +12,18 @@ public class PBMobNumPage
 	@FindBy(xpath="(//input[@id='central-login-module-sign-mobile'])[2]") private WebElement mobNum;
 	@FindBy(xpath="(//span[text()='Sign in with Password'])[2]") private WebElement signInWithPwd;
 
-	PBMobNumPage(WebDriver driver)
+	public PBMobNumPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
 	
-	public void enterMobNum()
+	public void inpPBMobNumPageMobNum()
 	{
 		mobNum.sendKeys("9075111787");
 	}
 	
-	public void clickOnSignInWithPwdBtn()
+	public void clickPBMobNumPageSignInWithPwd()
 	{
 		signInWithPwd.click();
 	}

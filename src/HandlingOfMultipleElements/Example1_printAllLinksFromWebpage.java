@@ -16,7 +16,7 @@ public class Example1_printAllLinksFromWebpage
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		
-		
+		                            //driver.findElement(By.tagName("a"));
 		List<WebElement> alllinks = driver.findElements(By.xpath("//a"));
 		
 		System.out.println(alllinks.size());
