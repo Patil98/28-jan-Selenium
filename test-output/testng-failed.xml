@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.Example7_AssertClass5">
+      <class name="Selenium_Axes.Following_Axes">
         <methods>
-          <include name="TC5"/>
+          <include name="Example1"/>
         </methods>
-      </class> <!-- TestNG.Example7_AssertClass5 -->
+      </class> <!-- Selenium_Axes.Following_Axes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

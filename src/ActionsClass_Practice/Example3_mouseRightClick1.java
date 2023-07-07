@@ -8,16 +8,24 @@ import org.openqa.selenium.interactions.Actions;
 
 public class Example3_mouseRightClick1 
 {
+	
+
 	public static void main(String[] args) throws InterruptedException
 	{
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://demo.guru99.com/test/simple_context_menu.html");
 		Thread.sleep(2000);
-		WebElement rclick = driver.findElement(By.xpath("//span[text()='right click me']"));
 		
 		Actions act=new Actions(driver);
-		Thread.sleep(2000);
-		act.contextClick(rclick).perform();
+		act.contextClick(driver.findElement(By.xpath("//span[text()='right click me']"))).perform();
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }

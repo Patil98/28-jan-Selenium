@@ -36,8 +36,6 @@ public class Example1_select_date_OptionUsing_HomeKey1
 		
 		Thread.sleep(1000);
 		day.sendKeys(Keys.ENTER);
-		
-		
-		
+			
 	}
 }

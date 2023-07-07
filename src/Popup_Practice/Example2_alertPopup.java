@@ -24,8 +24,6 @@ public class Example2_alertPopup
 		
 		Alert all = driver.switchTo().alert();
 		
-		
-		
 		String get = all.getText();
 		System.out.println(get);
 		

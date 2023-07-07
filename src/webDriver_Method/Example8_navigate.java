@@ -15,16 +15,16 @@ public class Example8_navigate
 	 
 
 	
-	driver.navigate().to("https://www.facebook.com/");
+	//driver.navigate().to("https://www.facebook.com/");
 	 
-	/*  Thread.sleep(2000);
+ /* Thread.sleep(2000);
 	  
 	 driver.navigate().back();
-	 Thread.sleep(2000);
+ Thread.sleep(2000);
 	 driver.navigate().forward();
 	 Thread.sleep(2000);
-	 driver.navigate().refresh();*/
-	 
+	 driver.navigate().refresh();
+	*/
 
 	 
 }

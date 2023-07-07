@@ -11,6 +11,7 @@ public class Example7_AssertClass3_assertTrue
 		boolean actResult = false;
 		
 		Assert.assertTrue(actResult, "Failed: act result is false- ");  
+	  
 	}
 
 }

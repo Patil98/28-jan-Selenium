@@ -28,7 +28,6 @@ public class Example1
 		System.out.println(srec);
 		
 		File dest=new File("C:\\Users\\bvp13\\OneDrive\\Documents\\Screenshot\\abc"+rs+".jpg");
-		
 		FileHandler.copy(srec, dest);
 		
 		

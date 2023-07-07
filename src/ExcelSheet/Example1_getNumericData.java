@@ -15,7 +15,7 @@ public class Example1_getNumericData
 		
 		FileInputStream file=new FileInputStream("C:\\Users\\bvp13\\OneDrive\\Documents\\data.xlsx");
 		
-		double get = WorkbookFactory.create(file).getSheet("Sheet1").getRow(0).getCell(2).getNumericCellValue();
+		double get = WorkbookFactory.create(file).getSheet("Sheet2").getRow(1).getCell(0).getNumericCellValue();
 		System.out.println(get);
 	}
 

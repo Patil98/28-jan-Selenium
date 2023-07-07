@@ -11,7 +11,7 @@ public class Example7_AssertClass2_assertNotEquals
 		String actResult="hi";
 		String expResult="hi";
 		
-		Assert.assertNotEquals(actResult, expResult,"Failed: both results are same:  ");  
+		Assert.assertNotEquals(actResult, expResult);
 	}
 
 }

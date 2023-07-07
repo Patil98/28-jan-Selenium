@@ -13,7 +13,7 @@ public class Example6_getAllDataInACol
 	{
 		FileInputStream file=new FileInputStream("C:\\Users\\bvp13\\OneDrive\\Documents\\data.xlsx");
 		
-		Sheet sh = WorkbookFactory.create(file).getSheet("Sheet2");	
+		Sheet sh = WorkbookFactory.create(file).getSheet("Sheet1");	
 		
 		int lastRowIndex = sh.getLastRowNum();
 		

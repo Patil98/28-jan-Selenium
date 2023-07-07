@@ -12,7 +12,7 @@ public class Example4_getNumericDataAsAString
 	{
 		
 		FileInputStream file=new FileInputStream("C:\\\\Users\\\\bvp13\\\\OneDrive\\\\Documents\\\\data.xlsx");
-				String value = WorkbookFactory.create(file).getSheet("Sheet1").getRow(1).getCell(2).getStringCellValue();
-				System.out.println(value);
+	    String value = WorkbookFactory.create(file).getSheet("Sheet1").getRow(1).getCell(2).getStringCellValue();
+		System.out.println(value);
 }
 }

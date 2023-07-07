@@ -17,8 +17,6 @@ public class Example6_DragAndDrop1
 		WebElement dest= driver.findElement(By.xpath("//*[@id=\"loan\"]/li"));
 		
 		Actions act=new Actions(driver);
-		
-		
 		act.dragAndDrop(src, dest).perform();
 		
 		
