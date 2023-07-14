@@ -1,8 +1,5 @@
 package JavaScriptExecutor;
 
-import java.awt.Choice;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +12,6 @@ public class Example3_sendKeys
 		WebDriver driver=new ChromeDriver();
         
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		
 		Thread.sleep(1000);
 		js.executeScript("window.location='https://www.amazon.in/'");
 		Thread.sleep(1000);

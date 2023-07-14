@@ -14,7 +14,6 @@ public class Example5_isEnabled1
 		Thread.sleep(2000);
 		
 		boolean result = driver.findElement(By.xpath("//button[@name='login']")).isEnabled();
-		
 		System.out.println(result);
 		
 		if(result)

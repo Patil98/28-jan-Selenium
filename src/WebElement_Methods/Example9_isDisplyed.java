@@ -5,32 +5,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Example9_isDisplyed 
+public class Example9_isDisplyed
 
 {
-	
-	
-	public static void main(String[] args) 
-	{
-		
-		WebDriver driver=new ChromeDriver();
+
+	public static void main(String[] args) {
+
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
-		
-	   boolean result = driver.findElement(By.xpath("//img[@alt='Facebook']")).isDisplayed();
-	System.out.println(result);
-		
-		if(result)
-		{
-			
+
+		boolean result = driver.findElement(By.xpath("//img[@alt='Facebook']")).isDisplayed();
+		System.out.println(result);
+
+		if (result) {
+
 			System.out.println("element is displayed");
-		}
-		else
-		{
+		} else {
 			System.out.println("element is not displayed");
 		}
-		
-		
-		
+
 	}
 
 }

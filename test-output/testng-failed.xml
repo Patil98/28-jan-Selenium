@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium_Axes.Following_Axes">
+      <class name="Selenium_Axes.Axes_facebook">
         <methods>
-          <include name="Example1"/>
+          <include name="Example"/>
         </methods>
-      </class> <!-- Selenium_Axes.Following_Axes -->
+      </class> <!-- Selenium_Axes.Axes_facebook -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

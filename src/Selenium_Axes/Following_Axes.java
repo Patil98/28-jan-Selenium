@@ -22,9 +22,10 @@ public class Following_Axes
 		//enter pass using Following Axes 
 		driver.findElement(By.xpath("//input[@id='email']//following::input[1]")).sendKeys("patil@123");
 		
+		
+						
 		//click on sign in Following Axes
 		driver.findElement(By.xpath("//input[@id='email']//following::button")).click();
-		
 		
 		
 		
