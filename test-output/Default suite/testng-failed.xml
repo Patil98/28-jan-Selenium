@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium_Axes.Axes_facebook">
+      <class name="AllSeleniumPrograme.invocationTimeOut_TreadPoolSize">
         <methods>
-          <include name="Example"/>
+          <include name="Test"/>
         </methods>
-      </class> <!-- Selenium_Axes.Axes_facebook -->
+      </class> <!-- AllSeleniumPrograme.invocationTimeOut_TreadPoolSize -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

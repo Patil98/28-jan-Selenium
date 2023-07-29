@@ -9,9 +9,9 @@ public class Example7_AssertClass2_assertNotEquals
 	public void TC2() 
 	{
 		String actResult="hi";
-		String expResult="hi";
+		String expResult="hello";
 		
-		Assert.assertNotEquals(actResult, expResult);
+		Assert.assertNotEquals(actResult, expResult, "failed - if both result are Equal");
 	}
 
 }

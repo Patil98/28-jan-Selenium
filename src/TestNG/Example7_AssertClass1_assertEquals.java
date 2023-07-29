@@ -9,7 +9,7 @@ public class Example7_AssertClass1_assertEquals
 	public void TC1() 
 	{
 		String actResult="hello";
-		String expResult="hi";
+		String expResult="hello";
 		
 		Assert.assertEquals(actResult, expResult,"Failed: both results are diff- ");    //className.methodname();
 	}

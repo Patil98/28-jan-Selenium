@@ -20,7 +20,6 @@ public class Example3_ScrollintoView
 		
 		WebElement contactus = driver.findElement(By.xpath("//*[@id=\"rt-footer\"]/div[1]/div/div/div/div/div[2]/div/div/div[1]/h4"));
 		
-
 		Thread.sleep(2000);
 		
 		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();",contactus);
@@ -32,7 +31,6 @@ public class Example3_ScrollintoView
 		Thread.sleep(2000);
 		
 		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();",tr);
-		
 		
 		
 	}

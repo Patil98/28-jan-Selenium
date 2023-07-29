@@ -9,7 +9,7 @@ public class example5_TestNGKeyword4_Timeouts
 	@Test(timeOut = 5000)
 	public void TC1() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		Reporter.log("--running TC1---", true);
 	}
 	

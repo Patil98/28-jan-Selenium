@@ -13,9 +13,7 @@ public class Example1_ScrollUpDown1
 		
 		driver.manage().window().maximize();
 		
-		
 		Thread.sleep(2000);
-		
 		
 		((JavascriptExecutor)driver).executeScript("window.scrollBy(0,2000)");
 		

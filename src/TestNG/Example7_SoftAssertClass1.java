@@ -12,11 +12,11 @@ public class Example7_SoftAssertClass1
 		SoftAssert soft=new SoftAssert();
 		
 		String actResult="hello";
-		String expResult="hi";
+		String expResult="hii";
 		soft.assertEquals(actResult, expResult,"Failed1: both results are diff- ");    
 		
 		
-		boolean actResult1 = false;		
+		boolean actResult1 = true;		
 		soft.assertTrue(actResult1,"Failed2: act result is false- ");
 		
 		soft.assertAll();

@@ -14,19 +14,15 @@ public class Example1
 	{
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.facebook.com/");
-		
+
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		System.out.println(src);
-		
-		 File dest=new File("C:\\Users\\bvp13\\OneDrive\\Documents\\Screenshot\\abc.jpg");
-		 
-		 FileHandler.copy(src, dest);        //className.methodname(pathOfSource, pathOfDest);
 
+		File dest=new File("C:\\Users\\bvp13\\OneDrive\\Documents\\Screenshot\\abc.jpg");
 
-		
-		
-	
+		FileHandler.copy(src, dest);        //className.methodname(pathOfSource, pathOfDest);
+
 	}
-	}
+}
 
 

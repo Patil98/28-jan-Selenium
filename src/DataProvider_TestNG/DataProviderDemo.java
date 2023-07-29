@@ -6,13 +6,12 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviderDemo 
 {
-	
 	@DataProvider(name="create")
-	public void DataSet(Object m)
+	public Object[][] DataSet(Method m)
 	{
 		Object[][] Testdata=null;
 		
-		if(m.equals("test"))
+		if(m.getName().equals("test"))
 		{
 			Testdata=new Object[][]
 			       {
@@ -24,7 +23,7 @@ public class DataProviderDemo
 			
 		}
 		
-		else if(m.equals("test1"))
+		else if(m.getName().equals("test1"))
 		{
 			Testdata=new Object[][]
 				       {
@@ -36,7 +35,7 @@ public class DataProviderDemo
 		}
 		
 
-		else if(m.equals("test2"))
+		else if(m.getName().equals("test2"))
 		{
 			Testdata=new Object[][]
 				       {
@@ -46,6 +45,8 @@ public class DataProviderDemo
 					     {"usename3","password3","third","fourth"}
 						};
 		}
+		
+		return Testdata;
 		
 		
 	}

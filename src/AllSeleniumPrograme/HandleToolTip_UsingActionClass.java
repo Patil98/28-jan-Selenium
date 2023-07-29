@@ -29,12 +29,14 @@ public class HandleToolTip_UsingActionClass
 		actions.moveToElement(element).perform();
 
 		// To get the tool tip text and assert
-		String ActualToolTipText = driver.findElement(By.xpath("//a[@class='fa fa-lg fa-facebook']")).getText();
-		System.out.println(ActualToolTipText);
+		String ActualToolTipText = driver.findElement(By.xpath("//a[@class='fa fa-lg fa-facebook']")).getAttribute("titl");
+		
 
 		// Assertion
 		assertEquals(ActualToolTipText, expectedTooltip, "Test case failed");
-
+		
+		System.out.println("Actual tooltip text is--->> "+ActualToolTipText );
+		
 		System.out.println("test case passed");
 
 		driver.close();

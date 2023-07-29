@@ -27,7 +27,6 @@ public class Example4_select_year_OptionUsing_HomeKey
 		act.click(year).perform();
 		Thread.sleep(1000);
 		
-		
 		act.sendKeys(Keys.HOME).perform();
 		Thread.sleep(1000);
 		

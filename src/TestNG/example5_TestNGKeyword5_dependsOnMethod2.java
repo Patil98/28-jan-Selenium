@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 public class example5_TestNGKeyword5_dependsOnMethod2
 {
 	
-
 	@Test
 	public void login1()
 	{
@@ -24,6 +23,12 @@ public class example5_TestNGKeyword5_dependsOnMethod2
 	public void logout()
 	{
 		Reporter.log("---running logout TC--", true);
+	}
+	
+	@Test
+	public void login3()
+	{
+		Reporter.log("---running login3 TC--", true);
 	}
 
 }

@@ -17,7 +17,7 @@ public class Example6_DragAndDrop3
 		Thread.sleep(2000);
 		
 		Actions act=new Actions(driver);
-		act.dragAndDrop(driver.findElement(By.xpath("//a[text()=' BANK ']")), driver.findElement(By.xpath("//li[@class='placeholder']"))).perform();
+		act.dragAndDrop(driver.findElement(By.xpath("//a[text()=' BANK ']")), driver.findElement(By.xpath("//li[@class='placeholder']"))).build().perform();
 		
 		
 	}

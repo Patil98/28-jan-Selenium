@@ -139,5 +139,6 @@
 	<classpathentry kind="lib" path="C:/apache pui/poi-bin-5.2.3-20220909 (1)/poi-bin-5.2.3/xmlgraphics-commons-2.6.jar"/>
 	<classpathentry kind="lib" path="C:/apache pui/poi-bin-5.2.3-20220909 (1)/poi-bin-5.2.3/xmlsec-3.0.0.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

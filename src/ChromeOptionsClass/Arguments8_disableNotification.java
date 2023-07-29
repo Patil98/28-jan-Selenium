@@ -10,7 +10,7 @@ public class Arguments8_disableNotification
 	{
 		ChromeOptions co=new ChromeOptions();
 		co.addArguments("--disable-notifications");
-		
+	
 		WebDriver driver=new ChromeDriver(co);
 		driver.get("https://www.redbus.in/");
 		driver.manage().window().maximize();
