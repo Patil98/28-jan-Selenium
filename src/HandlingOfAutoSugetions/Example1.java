@@ -23,7 +23,7 @@ public class Example1
 		Thread.sleep(2000);
 		List<WebElement> alloptions = driver.findElements(By.xpath("//ul[@class='G43f7e']/li"));
 		
-		String expText="redmi note 9 pro";
+		String expText="redmi note 13 pro";
 		
 		for(WebElement s1:alloptions)
 		{

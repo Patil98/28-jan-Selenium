@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 public class DataProvider_Test1 
 {
 
-
 	@Test(dataProvider="create")
 	public void test(String username,String password) throws InterruptedException 
 	{

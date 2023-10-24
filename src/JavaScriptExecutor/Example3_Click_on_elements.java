@@ -29,24 +29,23 @@ public class Example3_Click_on_elements
 		// page refresh
 		// js.executeScript("history.go(0)");
 
-		// get all text
-		// String sText = js.executeScript("return
-		// document.documentElement.innerText;").toString();
-		// System.out.println(sText);
-
-		// get title
-		String sText = js.executeScript("return document.title;").toString();
+		//get all text
+		String sText = js.executeScript("return document.documentElement.innerText;").toString();
 		System.out.println(sText);
 
+		// get title
+		String title = js.executeScript("return document.title;").toString();
+		System.out.println(title);
+
 		// get domain
-		String sTex = js.executeScript("return document.domain;").toString();
-		System.out.println(sTex);
+		String domain = js.executeScript("return document.domain;").toString();
+		System.out.println(domain);
 
 		// get url
-		String sTe = js.executeScript("return document.URL;").toString();
-		System.out.println(sTe);
+		String URL = js.executeScript("return document.URL;").toString();
+		System.out.println(URL);
 
-		// get text
+		// get text of specific element
 		String text = js.executeScript("return document.getElementById('glow-ingress-line2').innerHTML").toString();
 		System.out.println(text);
 

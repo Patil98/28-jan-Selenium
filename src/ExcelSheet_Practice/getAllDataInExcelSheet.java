@@ -10,13 +10,13 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class getAllDataInExcelSheet
 {
-	
+
 	public static void main(String[] args) throws EncryptedDocumentException, IOException 
 	{
 		FileInputStream file=new FileInputStream("C:\\Users\\bvp13\\OneDrive\\Documents\\data.xlsx");
-	Sheet sh = WorkbookFactory.create(file).getSheet("sheet1");
+		Sheet sh = WorkbookFactory.create(file).getSheet("sheet1");
 		int lastrowindex = sh.getLastRowNum();
-		
+
 		for(int i=0; i<=lastrowindex; i++)
 		{
 			int lastcellindex = sh.getRow(i).getLastCellNum()-1;
@@ -27,8 +27,8 @@ public class getAllDataInExcelSheet
 			}
 			System.out.println( );
 		}
-		
-		
+
+
 	}
 }
 

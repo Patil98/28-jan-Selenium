@@ -7,16 +7,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class Headless_Browser 
-{
-	
+{	
 	public static void main(String[] args) 
-	{
-		
+	{		
 		ChromeOptions co=new ChromeOptions();
 		co.addArguments("--headless");
 		//--headless=chrome
 		//--headless=new
-		
 		
 		WebDriver driver=new ChromeDriver(co);
 		driver.get("https://www.amazon.in/");
@@ -25,8 +22,7 @@ public class Headless_Browser
 		System.out.println(driver.getTitle());
 		
 		driver.quit();
-		
-		
+				
 	}
 
 }

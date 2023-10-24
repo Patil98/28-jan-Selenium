@@ -14,8 +14,8 @@ public class RemoveAutomationMessage
 	public static void main(String[] args)
 	{
 		ChromeOptions option=new ChromeOptions();
-		option.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"} );
-		//option.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation"));
+		//option.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"} );
+		  option.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation"));
 		//option.setExperimentalOption("excludeSwitches", Collections.singleton("enable-automation"));
 		//option.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 		

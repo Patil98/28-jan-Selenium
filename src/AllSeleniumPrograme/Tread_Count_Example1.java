@@ -17,13 +17,11 @@ public class Tread_Count_Example1
 		Thread.sleep(5000);
 		driver.quit();
 		Thread.sleep(2000);
-
 	}
 
 	@Test
 	public void M2() throws InterruptedException 
 	{
-
 		driver=new ChromeDriver();
 		driver.get("https://www.Google.com/");
 		System.out.println("this is tread "+ Thread.currentThread().getId());
@@ -36,7 +34,6 @@ public class Tread_Count_Example1
 	@Test
 	public void M3() throws InterruptedException 
 	{
-
 		driver=new ChromeDriver();
 		driver.get("https://www.youtube.com/");
 		System.out.println("this is tread "+ Thread.currentThread().getId());
@@ -44,10 +41,4 @@ public class Tread_Count_Example1
 		driver.quit();
 		Thread.sleep(2000);
 	}
-
-	
-
-
-
-
 }

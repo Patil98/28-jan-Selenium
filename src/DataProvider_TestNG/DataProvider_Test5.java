@@ -15,7 +15,7 @@ public class DataProvider_Test5
 	public void TestCaseGoogleSearch(String state,String monuments) throws InterruptedException 
 	{
 		ChromeOptions co=new ChromeOptions();
-		co.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));
+		//co.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));
 		co.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation"));
 		
 		WebDriver driver=new ChromeDriver(co);
@@ -35,7 +35,7 @@ public class DataProvider_Test5
 	}
 	
 	
-	@DataProvider(name="dataset",parallel=true)
+	@DataProvider(name="dataset" ,parallel=true)
 	public Object[][] DataProvider() 
 	{
 		return new Object[][]

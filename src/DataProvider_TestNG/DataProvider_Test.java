@@ -4,17 +4,14 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class DataProvider_Test 
-{
-	
-	
+{	
 	@Test(dataProvider="dataProvider")
 	public void test(String username,String password)
 	{
 		System.out.println(username+"------"+password);
 	}
 	
-	
-	
+
 	@Test(dataProvider="create")
 	public void test(String username,String password,String test) 
 	{

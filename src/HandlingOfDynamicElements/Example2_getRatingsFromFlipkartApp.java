@@ -30,9 +30,7 @@ public class Example2_getRatingsFromFlipkartApp
 		
 		String rating = driver.findElement(By.xpath("((//div[@class='_2kHMtA'])[1]//span)[6]")).getText();
 	    System.out.println(rating);
-		
-		
-		
+				
 	}
 
 }

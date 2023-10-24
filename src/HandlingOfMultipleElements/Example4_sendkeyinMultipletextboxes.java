@@ -1,5 +1,6 @@
 package HandlingOfMultipleElements;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -23,9 +24,6 @@ public class Example4_sendkeyinMultipletextboxes
 		alltextbox.get(0).sendKeys("bhushan");
 		Thread.sleep(5000);
 		alltextbox.get(1).sendKeys("patil");
-		
-		
-		
 		
 	}
 

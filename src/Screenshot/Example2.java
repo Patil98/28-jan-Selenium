@@ -13,25 +13,24 @@ import net.bytebuddy.utility.RandomString;
 
 public class Example2
 {
-	
-public static void main(String[] args) throws IOException 
-{
-	
-	WebDriver driver=new ChromeDriver();
-	driver.get("https://www.facebook.com/");
-	
-	String rs = RandomString.make(2);         //
-	
-	File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	System.out.println(src);
-	
-	File dest=new File("C:\\Users\\bvp13\\OneDrive\\Documents\\Screenshot\\image"+rs+".jpg");
-	
-	FileHandler.copy(src, dest);
-	
-}
+	public static void main(String[] args) throws IOException 
+	{
 
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.facebook.com/");
 
+		String rs = RandomString.make(2);         
+
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		System.out.println(src);
+
+		File dest=new File("C:\\Users\\bvp13\\OneDrive\\Documents\\Screenshot\\image"+rs+".jpg");
+
+		FileHandler.copy(src, dest);
+
+		
+
+	}
 }
 
 

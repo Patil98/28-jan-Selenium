@@ -16,11 +16,9 @@ public class Example2_moveToElement
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.in/");
 		
-		
 		Thread.sleep(2000);
 		
 		WebElement langauge = driver.findElement(By.xpath("//*[@id=\"icp-nav-flyout\"]/span/span[2]/div"));
-		
 		
 		Thread.sleep(3000);
 		

@@ -11,8 +11,7 @@ public class selectINDIAFromSingleSelectableListbox
 	public static void main(String[] args) throws InterruptedException
 	{
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.globalsqa.com/demo-site/select-dropdown-menu/");
-		
+		driver.get("https://www.globalsqa.com/demo-site/select-dropdown-menu/");		
 		
 		WebElement india = driver.findElement(By.tagName("select"));
 		
@@ -22,5 +21,6 @@ public class selectINDIAFromSingleSelectableListbox
 		
 		//s.selectByValue("IND");
 		s.selectByVisibleText("India");
+		
 	}
 }

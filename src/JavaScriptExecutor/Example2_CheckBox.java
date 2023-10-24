@@ -15,7 +15,7 @@ public class Example2_CheckBox
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		
-		js.executeScript("document.getElementById('vfb-7-1').checked='true';");
+		js.executeScript("document.getElementById('vfb-7-1').checked='Falls';");
 		
 		js.executeScript("document.getElementById('vfb-6-0').checked='true';");
 		

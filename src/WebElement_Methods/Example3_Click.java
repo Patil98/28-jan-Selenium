@@ -18,7 +18,7 @@ public class Example3_Click
 		
 		Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("(//input[@class='_8esa'])[2]")).click();
+		driver.findElement(By.xpath("(//input[@id='u_2_6_Qn'])[1]")).submit();
 		
 		
 	}

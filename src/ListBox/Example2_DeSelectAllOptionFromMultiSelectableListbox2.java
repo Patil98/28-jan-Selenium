@@ -22,8 +22,6 @@ public class Example2_DeSelectAllOptionFromMultiSelectableListbox2
 
 
 		Select s=new Select(country);
-
-
 		s.selectByIndex(0);
 		s.selectByIndex(1);
 		s.selectByIndex(2);

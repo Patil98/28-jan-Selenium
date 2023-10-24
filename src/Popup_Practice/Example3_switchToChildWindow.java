@@ -18,7 +18,7 @@ public class Example3_switchToChildWindow
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		driver.findElement(By.xpath("/html/body/div[2]/div/div/button")).click();
 		

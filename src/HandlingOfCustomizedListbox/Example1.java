@@ -22,8 +22,7 @@ public class Example1
 		
 		//step1:
 		WebElement month = driver.findElement(By.xpath("//*[@id=\"month\"]"));
-		
-		
+			
 		//step2:
 		Actions act=new Actions(driver);
 		

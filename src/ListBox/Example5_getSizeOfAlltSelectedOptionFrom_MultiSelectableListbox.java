@@ -32,7 +32,7 @@ public class Example5_getSizeOfAlltSelectedOptionFrom_MultiSelectableListbox
 		
 		
         int all = s.getAllSelectedOptions().size();
-	     System.out.println(all);
+	    System.out.println(all);
 	  
 		
 //		List<WebElement> all = s.getAllSelectedOptions();

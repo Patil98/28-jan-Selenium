@@ -20,8 +20,8 @@ public class Explicit_Waits
 		driver.get("https://www.amazon.in/");
 		driver.manage().window().maximize();
 		
-		new WebDriverWait(driver, Duration.ofSeconds(5)).
-		until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='twotabsearchtextbox']")))
+		new WebDriverWait(driver, Duration.ofSeconds(5))
+		.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='twotabsearchtextbox']")))
 		.sendKeys("one plus");
 	
 		/*
@@ -30,6 +30,8 @@ public class Explicit_Waits
 		
 		WebElement element2 = new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Mobiles')]")));
 		element2.click();
+		
+	
 	
 	}
 }

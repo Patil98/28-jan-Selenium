@@ -15,7 +15,7 @@ public class Example1_ScrollUpDown
 
 		Thread.sleep(2000);
 
-		//scroll down :->  1st parameter: 0,  2nd parameter: +ve       //pixel
+		//scroll down :->  1st parameter: 0,  2nd parameter: +ve     //pixel
 		((JavascriptExecutor)driver).executeScript("window.scrollBy(0,3000)");
 
 		Thread.sleep(2000);

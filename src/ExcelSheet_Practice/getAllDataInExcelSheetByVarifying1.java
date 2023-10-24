@@ -11,13 +11,13 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class getAllDataInExcelSheetByVarifying1 
 {
-	
+
 	public static void main(String[] args) throws EncryptedDocumentException, IOException 
 	{
 		FileInputStream file=new FileInputStream("C:\\Users\\bvp13\\OneDrive\\Documents\\data.xlsx");
 		Sheet sh = WorkbookFactory.create(file).getSheet("Sheet3");
 		int lastrowindex = sh.getLastRowNum();
-		
+
 		for(int i=0; i<=lastrowindex; i++)
 		{
 			int lastcellindex = sh.getRow(i).getLastCellNum()-1;
@@ -25,7 +25,7 @@ public class getAllDataInExcelSheetByVarifying1
 			{
 				Cell cellinfo = sh.getRow(i).getCell(j);
 				CellType s1 = cellinfo.getCellType();
-				
+
 				if(s1==CellType.STRING)
 				{
 					String value = cellinfo.getStringCellValue();
@@ -41,12 +41,12 @@ public class getAllDataInExcelSheetByVarifying1
 					boolean value = cellinfo.getBooleanCellValue();
 					System.out.print(value+" | ");
 				}
-				
+
 			}
 			System.out.println( );
 		}
-	
-		
+
+
 	}
 
 }

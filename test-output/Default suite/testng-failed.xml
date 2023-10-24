@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AllSeleniumPrograme.invocationTimeOut_TreadPoolSize">
+      <class name="TestNG.example5_TestNGKeyword4_Timeouts">
         <methods>
-          <include name="Test"/>
+          <include name="TC1"/>
         </methods>
-      </class> <!-- AllSeleniumPrograme.invocationTimeOut_TreadPoolSize -->
+      </class> <!-- TestNG.example5_TestNGKeyword4_Timeouts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -33,18 +33,11 @@ public class ListBox_Sorted_by_Treeset
 		for(WebElement d:all)
 		{
 		     t.add(d.getText());
-			System.out.println(d.getText()+" ");
+			 System.out.print(d.getText()+" ");
 		
 		}
 	
 		System.out.println(t);
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 

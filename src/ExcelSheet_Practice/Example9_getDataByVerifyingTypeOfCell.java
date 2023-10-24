@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.examples.xssf.eventusermodel.XLSX2CSV;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -32,9 +33,8 @@ public class Example9_getDataByVerifyingTypeOfCell
 		{
 			boolean value = cellinfo.getBooleanCellValue();
 			System.out.println(value);
-		}
-		
-		
+		}				
+
 		
 	}
 

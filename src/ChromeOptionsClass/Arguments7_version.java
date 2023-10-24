@@ -11,9 +11,9 @@ public class Arguments7_version
 
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("version");
-        System.out.println(option);
+		System.out.println(option);
 		WebDriver driver = new ChromeDriver(option);
-		 System.out.println(option);
+		System.out.println(option);
 		driver.get("https://www.redbus.in/");
 
 		System.out.println(driver.getTitle());

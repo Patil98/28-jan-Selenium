@@ -11,14 +11,14 @@ public class Example2_sendKeys
 	{
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("https://www.amazon.in/");
+		driver.get("https://www.facebook.com/");
 
 		// driver.manage().window().maximize();
 		Thread.sleep(3000);
 
 		// Javascript command
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("document.getElementById('twotabsearchtextbox').value='shoes';");
+		js.executeScript("document.getElementById('email').value='bhushan@gmail.com'");
 
 		Thread.sleep(5000);
 

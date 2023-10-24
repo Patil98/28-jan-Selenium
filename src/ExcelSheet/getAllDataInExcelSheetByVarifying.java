@@ -11,7 +11,6 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class getAllDataInExcelSheetByVarifying 
 {
-	
 	public static void main(String[] args) throws EncryptedDocumentException, IOException 
 	{
 		FileInputStream file=new FileInputStream("C:\\Users\\bvp13\\OneDrive\\Documents\\data.xlsx");

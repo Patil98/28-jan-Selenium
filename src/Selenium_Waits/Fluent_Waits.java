@@ -17,19 +17,18 @@ public class Fluent_Waits
 	@Test
 	public void sample()
 	{
-
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://demo.guru99.com/test/login.html");
 		driver.manage().window().maximize();
 
-		Wait<WebDriver> wait =new FluentWait<WebDriver>(driver)	
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)	
 				.withTimeout(Duration.ofSeconds(10))
 				.pollingEvery(Duration.ofSeconds(2))
 				.ignoring(NoSuchElementException.class);
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='emai']"))).sendKeys("bhushan@gmail.com");
-
-
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 	}
 
 

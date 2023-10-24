@@ -12,38 +12,38 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Example10_getAllDataInColumnByVerifyingTypeOfCell 
 {
-public static void main(String[] args) throws EncryptedDocumentException, IOException 
-{
-	
-    FileInputStream file=new FileInputStream("C:\\Users\\bvp13\\OneDrive\\Documents\\data.xlsx");
-  Sheet sh = WorkbookFactory.create(file).getSheet("Sheet1");
- int lastrowindex = sh.getLastRowNum(); 
-  
-  for(int i=0; i<=lastrowindex; i++)
-  {
-	  Cell cellinfo = sh.getRow(i).getCell(2);
-	  CellType s1 = cellinfo.getCellType();
-	  
-	  if(s1==CellType.STRING)
-	  {
-		 String value = cellinfo.getStringCellValue();
-		 System.out.println(value);
-	  }
-	  else if (s1==CellType.NUMERIC) 
-	  {
-		double value = cellinfo.getNumericCellValue();
-		  System.out.println(value);
-	  }
-	  else if(s1==CellType.BOOLEAN)
-	  {
-		  boolean value = cellinfo.getBooleanCellValue();
-		  System.out.println(value);
-	  }
+	public static void main(String[] args) throws EncryptedDocumentException, IOException 
+	{
 
-  }
-  
-  
-}
-	
-	
+		FileInputStream file=new FileInputStream("C:\\Users\\bvp13\\OneDrive\\Documents\\data.xlsx");
+		Sheet sh = WorkbookFactory.create(file).getSheet("Sheet1");
+		int lastrowindex = sh.getLastRowNum(); 
+
+		for(int i=0; i<=lastrowindex; i++)
+		{
+			Cell cellinfo = sh.getRow(i).getCell(2);
+			CellType s1 = cellinfo.getCellType();
+
+			if(s1==CellType.STRING)
+			{
+				String value = cellinfo.getStringCellValue();
+				System.out.println(value);
+			}
+			else if (s1==CellType.NUMERIC) 
+			{
+				double value = cellinfo.getNumericCellValue();
+				System.out.println(value);
+			}
+			else if(s1==CellType.BOOLEAN)
+			{
+				boolean value = cellinfo.getBooleanCellValue();
+				System.out.println(value);
+			}
+
+		}
+
+
+	}
+
+
 }

@@ -17,9 +17,7 @@ public class Example1
 
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		System.out.println(src);
-
 		File dest=new File("C:\\Users\\bvp13\\OneDrive\\Documents\\Screenshot\\abc.jpg");
-
 		FileHandler.copy(src, dest);        //className.methodname(pathOfSource, pathOfDest);
 
 	}

@@ -11,11 +11,14 @@ public class Example8_navigate
 		WebDriver driver=new ChromeDriver();
 		driver.navigate().to("https://www.amazon.in/");
 
-		String a="https://www.amazon.in/";
-		driver.get(a);
+		//String a="https://www.amazon.in/";
+		//.get(a);
 		
-		String s="https://www.facebook.com/";
-		driver.navigate().to(s);
+		//String s="https://www.facebook.com/";
+		//driver.navigate().to(s);
+		
+		
+		driver.close();
 
 		Thread.sleep(2000);
 		driver.navigate().back();
@@ -23,8 +26,7 @@ public class Example8_navigate
 		driver.navigate().forward();
 		Thread.sleep(2000);
 		driver.navigate().refresh();
-		
-		
+			
 	}
 
 

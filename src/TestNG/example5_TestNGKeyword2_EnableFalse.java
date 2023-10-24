@@ -25,11 +25,4 @@ public class example5_TestNGKeyword2_EnableFalse
 		Reporter.log("----running TC3----", true);
 	}
 	
-	
-	
-	
-	
-	
-	
-	
 }

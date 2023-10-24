@@ -16,6 +16,7 @@ public class Arguments1_headless
 		
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
+		
 	}
 
 }

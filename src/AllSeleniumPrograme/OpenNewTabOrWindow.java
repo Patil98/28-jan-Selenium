@@ -46,7 +46,7 @@ public class OpenNewTabOrWindow
 		System.out.println("first tab: " + driver.getCurrentUrl());
 
 		driver.quit();
-		driver.close();
+		
 		
 		
 		

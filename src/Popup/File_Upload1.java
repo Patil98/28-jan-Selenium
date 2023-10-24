@@ -6,10 +6,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class File_Upload1 
 {
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException 
+	{
 		
-
-	
 	WebDriver driver=new ChromeDriver();
 	driver.get("https://demo.guru99.com/test/upload/");
 	

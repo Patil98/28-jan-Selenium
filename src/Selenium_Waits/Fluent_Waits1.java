@@ -39,7 +39,7 @@ public class Fluent_Waits1
 				.ignoring(NoSuchElementException.class);
 				
 		   wait.until(ExpectedConditions.visibilityOf(element)).sendKeys(value);
-				
+			
 	}
 	
 	public static void click(WebDriver driver,WebElement element, int time,int freq) 

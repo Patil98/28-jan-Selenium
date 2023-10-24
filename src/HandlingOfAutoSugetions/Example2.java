@@ -34,11 +34,8 @@ public class Example2
 			{
 				s1.click();
 				break;
-			}
-				
-				
-		}
-		
+			}		
+		}	
 	}
 
 }

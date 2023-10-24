@@ -4,9 +4,8 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class example5_TestNGKeyword5_dependsOnMethod
-{
-	
-	@Test
+{	
+	@Test()
 	public void login()
 	{
 		Reporter.log("---running login TC--", true);

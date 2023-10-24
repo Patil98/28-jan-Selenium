@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class invocationTimeOut_TreadPoolSize
 {                       //invocationTimeOut=provide in micro sec
-    @Test(invocationCount=4,threadPoolSize=3)
+    @Test(invocationCount=4,threadPoolSize=2)
 	public void Test() throws InterruptedException 
 	{
 		WebDriver driver=new ChromeDriver();
@@ -16,7 +16,6 @@ public class invocationTimeOut_TreadPoolSize
 		driver.findElement(By.xpath("//li[@data-label='name']")).click();
 		driver.findElement(By.xpath("//li[@data-label='email']")).click();	
 		driver.quit();
-
 	}
 
 }

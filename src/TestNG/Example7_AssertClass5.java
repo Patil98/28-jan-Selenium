@@ -12,7 +12,7 @@ public class Example7_AssertClass5
 		String actResult="hi";
 		String expResult="hi";
 		Assert.assertEquals(actResult, expResult,"Failed1: both results are diff- ");    
-		
+	
 		
 		boolean actResult1 = false;		
 		Assert.assertTrue(actResult1,"Failed2: act result is false- ");

@@ -13,7 +13,7 @@ public class Example3_getColSizeInARow
 	
 	{
 		FileInputStream file=new FileInputStream("C:\\Users\\bvp13\\OneDrive\\Documents\\data.xlsx");
-		short get = WorkbookFactory.create(file).getSheet("sheet1").getRow(0).getLastCellNum();
+		int get = WorkbookFactory.create(file).getSheet("sheet1").getRow(0).getLastCellNum();
 		System.out.println(get);
 		
 	}

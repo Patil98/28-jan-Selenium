@@ -15,5 +15,7 @@ public class Example1_getMethod
 		//WebDriver driver=new ChromeDriver();
 		driver.get("https://www.google.com/");
 		
+	
+		
 	}
 }

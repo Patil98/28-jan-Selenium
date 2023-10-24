@@ -32,7 +32,7 @@ public class Example3_selectDeselectMultipleCheckboxes
 		for(int i=allcheckbox.size()-1; i>=0; i--)
 		{
 			allcheckbox.get(i).click();
-			Thread.sleep(1000);
+			Thread.sleep(200);
 		}
 		
 		

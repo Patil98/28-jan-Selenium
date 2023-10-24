@@ -24,6 +24,7 @@ public class CopyAndPasteUsingSeleninum1
 		driver.findElement(By.name("password")).sendKeys(Keys.CONTROL, "v");
 		Thread.sleep(5000);
 		driver.findElement(By.name("login")).click();
+	
 		driver.close();
 
 	}

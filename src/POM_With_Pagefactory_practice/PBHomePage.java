@@ -1,7 +1,6 @@
 package POM_With_Pagefactory_practice;
 //pom class 4
 
-import org.apache.poi.hslf.model.textproperties.ParagraphFlagsTextProp;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;

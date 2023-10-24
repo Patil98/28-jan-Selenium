@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="methods" thread-count="2">
-  <test  name="Test">
+<suite name="Suite"  thread-count="3" parallel="classes">
+
+  <test  name="Test" >
     <classes>
-      <class name="AllSeleniumPrograme.Tread_Count_Example2"/>
       <class name="AllSeleniumPrograme.Tread_Count_Example1"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test  name="Test1" >
+    <classes>
+      <class name="AllSeleniumPrograme.Tread_Count_Example2"/>
+    </classes>
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

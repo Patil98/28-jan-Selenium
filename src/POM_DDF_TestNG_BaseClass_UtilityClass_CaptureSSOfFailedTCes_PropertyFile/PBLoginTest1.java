@@ -20,9 +20,6 @@ import org.testng.annotations.Test;
 
 public class PBLoginTest1 extends BaseClass
 {
-
-	
-	
 	PBLoginPage login;
 	PBMobNumPage mobnum;
 	PBPwdPage pwd;
@@ -31,23 +28,23 @@ public class PBLoginTest1 extends BaseClass
 	PBProfilePage profile;
 	int TCID;
 
-	
+
 	@Parameters("Browsername")
 	@BeforeClass
 	public void openBrowser( String Browsername) throws EncryptedDocumentException, IOException 
 	{
 		IntializeBrowser(Browsername);
-		
+
 		login=new PBLoginPage(driver);
-	    mobnum=new PBMobNumPage(driver);
-		 pwd=new PBPwdPage(driver);
-	     home=new PBHomePage(driver);
-		 myacc=new PBMyAccPage(driver);
-		 profile=new PBProfilePage(driver);
-		
-		
+		mobnum=new PBMobNumPage(driver);
+		pwd=new PBPwdPage(driver);
+		home=new PBHomePage(driver);
+		myacc=new PBMyAccPage(driver);
+		profile=new PBProfilePage(driver);
+
+
 	}
-	
+
 	@BeforeMethod
 	public void loginToApp() throws InterruptedException, EncryptedDocumentException, IOException 
 	{
@@ -58,25 +55,25 @@ public class PBLoginTest1 extends BaseClass
 		pwd.inpPBPwdPagePwd(UtilityClass.getPFData("PWD"));
 		pwd.clickPBPwdPageSignIn();
 		Thread.sleep(3000);
-		
+
 	}
-	
+
 	@Test
 	public void verifyFullName() throws InterruptedException, EncryptedDocumentException, IOException 
 	{
 		TCID=102;
 		home.OpenDDOptionPBHomePageMyAcc();
 		Thread.sleep(3000);
-		 myacc.clickPBMyAccPageMyProfile();
-		 profile.SwitchToChildWindow();
-		// profile.VarifyPBProfilePageFullName(sh.getRow(0).getCell(2).getStringCellValue());
-		 
-		 String actResult= profile.VarifyPBProfilePageFullName();
-		 String ExpResult=UtilityClass.getTestData(0, 2);
-		 Assert.assertEquals(actResult, ExpResult);
-		 
+		myacc.clickPBMyAccPageMyProfile();
+		profile.SwitchToChildWindow();
+		//profile.VarifyPBProfilePageFullName(sh.getRow(0).getCell(2).getStringCellValue());
+
+		String actResult= profile.VarifyPBProfilePageFullName();
+		String ExpResult=UtilityClass.getTestData(0, 2);
+		Assert.assertEquals(actResult, ExpResult);
+
 	}
-	
+
 	@AfterMethod
 	public void logoutFromApp(ITestResult s) throws IOException 
 	{

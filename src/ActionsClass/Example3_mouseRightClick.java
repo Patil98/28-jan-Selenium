@@ -14,23 +14,23 @@ public class Example3_mouseRightClick
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.in/");
-		
+
 		Thread.sleep(2000);
-		
-		 WebElement td = driver.findElement(By.xpath("//*[@id=\"nav-xshop\"]/a[4]"));
-		
-		 Actions act=new Actions(driver);
-		 
-			Thread.sleep(2000);
-			
-	//		act.moveToElement(td).perform();
-	//		act.contextClick().perform();
-			
-	//		act.moveToElement(td).contextClick().perform();
-			
-			act.contextClick(td).perform();
-			
-		
+
+		WebElement td = driver.findElement(By.xpath("//*[@id=\"nav-xshop\"]/a[4]"));
+
+		Actions act=new Actions(driver);
+
+		Thread.sleep(2000);
+
+		//act.moveToElement(td).perform();
+		//act.contextClick().perform();
+
+		//act.moveToElement(td).contextClick().perform();
+
+		act.contextClick(td).perform();
+
+
 	}
 
 

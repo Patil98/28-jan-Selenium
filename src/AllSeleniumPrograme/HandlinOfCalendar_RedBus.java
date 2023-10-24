@@ -34,7 +34,7 @@ public class HandlinOfCalendar_RedBus
 		Thread.sleep(3000);
 		
 		////navigate to expected month -> Aug
-		while(driver.findElement(By.xpath("//div[@class='DayNavigator__CalendarHeader-qj8jdz-1 fxvMrr']//div[2]")).getText().contains("Sep")==false)
+		while(driver.findElement(By.xpath("//div[@class='DayNavigator__CalendarHeader-qj8jdz-1 fxvMrr']//div[2]")).getText().contains("Nov")==false)
 		{
 			Thread.sleep(2000);
 			

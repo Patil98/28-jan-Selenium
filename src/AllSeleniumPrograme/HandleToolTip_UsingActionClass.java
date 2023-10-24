@@ -1,18 +1,16 @@
 package AllSeleniumPrograme;
 
-import static org.testng.Assert.assertEquals;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 
 public class HandleToolTip_UsingActionClass 
 {
 	public static void main(String[] args) 
 	{
-
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.guru99.com/test/social-icon.html");
@@ -29,11 +27,11 @@ public class HandleToolTip_UsingActionClass
 		actions.moveToElement(element).perform();
 
 		// To get the tool tip text and assert
-		String ActualToolTipText = driver.findElement(By.xpath("//a[@class='fa fa-lg fa-facebook']")).getAttribute("titl");
+		String ActualToolTipText = driver.findElement(By.xpath("//a[@class='fa fa-lg fa-facebook']")).getAttribute("title");
 		
 
 		// Assertion
-		assertEquals(ActualToolTipText, expectedTooltip, "Test case failed");
+		Assert.assertEquals(ActualToolTipText, expectedTooltip, "Test case failed");
 		
 		System.out.println("Actual tooltip text is--->> "+ActualToolTipText );
 		

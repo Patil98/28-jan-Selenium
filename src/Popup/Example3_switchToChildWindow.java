@@ -27,11 +27,9 @@ public class Example3_switchToChildWindow
         ArrayList<String> a1=new ArrayList<String>(allid);       //{mainPageID(0), childWindowID(1)}
 		String childwindowid = a1.get(1);
 		
-		
 		//switch to child window
 		driver.switchTo().window(childwindowid);     //String childWindowID
-      
-		
+      	
 		//click on "Training" link from childWindow
 		driver.findElement(By.xpath("//*[@id=\"primary-menu\"]/li[7]/a")).click();
 

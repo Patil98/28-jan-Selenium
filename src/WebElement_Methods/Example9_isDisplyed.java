@@ -17,7 +17,7 @@ public class Example9_isDisplyed
 		boolean result = driver.findElement(By.xpath("//img[@alt='Facebook']")).isDisplayed();
 		System.out.println(result);
 
-		if (result) 
+		if(result) 
 		{
 
 			System.out.println("element is displayed");

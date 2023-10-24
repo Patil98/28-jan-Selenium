@@ -6,7 +6,6 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
-import org.apache.logging.log4j.message.StructuredDataMessage.Format;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,7 +32,7 @@ public class FileUpload_UsingRobotClass
 		rb.delay(2000);
 
 		// to copy file path in clipboard
-		StringSelection ss = new StringSelection("C:\\Users\\bvp13\\Downloads\\coolfreecv_resume_en_06_n.docx");
+		StringSelection ss = new StringSelection("C:\\Users\\bvp13\\Downloads\\The-Vibrant-Diversity-of-India.pptx");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
 		// to perform control+V action to paste the file
@@ -47,7 +46,7 @@ public class FileUpload_UsingRobotClass
 		rb.keyRelease(KeyEvent.VK_ENTER);
 
 		// click on upload button
-		driver.findElement(By.id("file-submit")).click();
+		//driver.findElement(By.id("file-submit")).click();
 
 	}
 }
