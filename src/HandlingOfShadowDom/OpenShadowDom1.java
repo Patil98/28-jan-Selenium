@@ -28,7 +28,7 @@ public class OpenShadowDom1
 //		
 //		
 		JavascriptExecutor js =(JavascriptExecutor)driver;
-		WebElement ele = (WebElement) js.executeScript("return document.querySelector(\"body > book-app\").shadowRoot.querySelector(\"#input\");");
+		WebElement ele = (WebElement) js.executeScript("return document.querySelector('body > book-app').shadowRoot.querySelector('#input');");
 		js.executeScript("arguments[0].value='bhushan'",ele);
 		
 	}

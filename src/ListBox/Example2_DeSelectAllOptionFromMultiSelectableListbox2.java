@@ -18,9 +18,7 @@ public class Example2_DeSelectAllOptionFromMultiSelectableListbox2
 
 
 		WebElement country = driver.findElement(By.xpath("//select[@id='1234']"));
-
-
-
+		
 		Select s=new Select(country);
 		s.selectByIndex(0);
 		s.selectByIndex(1);

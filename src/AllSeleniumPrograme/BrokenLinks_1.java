@@ -37,9 +37,9 @@ public class BrokenLinks_1
 			HttpURLConnection open =(HttpURLConnection)links.openConnection();
 			open.connect();
 
-			if(open.getResponseCode()>=400)
+			if(open.getResponseCode()>=200)
 			{
-				System.out.println(open.getResponseCode() +url +"is   Broken   Links");
+				System.out.println(open.getResponseCode() +url +" is Broken Links");
 				BrokenLinks++;
 			}
 			else
@@ -47,6 +47,7 @@ public class BrokenLinks_1
 				System.out.println(open.getResponseCode() +url+"is  valid   Links");
 			}  
 		}
+		
 		System.out.println("number of Broken Links "+BrokenLinks);
 		Thread.sleep(2000);
 		driver.quit();

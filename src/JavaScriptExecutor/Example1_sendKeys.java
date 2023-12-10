@@ -11,7 +11,6 @@ public class Example1_sendKeys
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.amazon.in/");
 
@@ -21,13 +20,12 @@ public class Example1_sendKeys
 
 		Thread.sleep(2000);
 
-		((JavascriptExecutor)driver).executeScript("arguments[0].setAttribute('value','shirts')",ele);
+		((JavascriptExecutor)driver).executeScript("arguments[0].value='shirts'",ele);
 
 		Thread.sleep(2000);
 
 		driver.findElement(By.id("nav-search-submit-button")).click();
-
-
+		
 	}
 
 

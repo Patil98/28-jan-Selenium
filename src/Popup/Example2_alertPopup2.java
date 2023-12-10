@@ -25,9 +25,8 @@ public class Example2_alertPopup2
 
 		Thread.sleep(2000); 
 
-
-		//       //2: click on cancel btn from alert popup
-		//       alt.dismiss();
+		// 2: click on cancel btn from alert popup
+		//alt.dismiss();
 
 		Thread.sleep(2000); 
 

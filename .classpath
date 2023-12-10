@@ -66,7 +66,7 @@
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-devtools-v115-4.11.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-edge-driver-4.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-edge-driver-4.11.0-sources.jar"/>
-	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-firefox-driver-4.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-firefox-driver-4.11.0.jar" sourcepath="C:/Users/bvp13/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.11.0/selenium-firefox-driver-4.11.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-firefox-driver-4.11.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-http-4.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-http-4.11.0-sources.jar"/>

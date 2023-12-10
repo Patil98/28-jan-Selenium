@@ -20,7 +20,7 @@ public class ShadowRootUsing_Js
 		driver.get("https://shop.polymer-project.org/");
 		
 		JavascriptExecutor js =(JavascriptExecutor)driver;
-		WebElement ele = (WebElement) js.executeScript("return document.querySelector(\"body > shop-app\").shadowRoot.querySelector(\"iron-pages > shop-home\").shadowRoot.querySelector(\"div:nth-child(2) > shop-button > a\")");
+		WebElement ele = (WebElement) js.executeScript("return document.querySelector('body > shop-app').shadowRoot.querySelector('iron-pages > shop-home').shadowRoot.querySelector('div:nth-child(2) > shop-button > a')");
 		js.executeScript("arguments[0].click();",ele);
 		
 	}

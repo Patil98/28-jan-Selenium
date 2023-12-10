@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.example5_TestNGKeyword4_Timeouts">
+      <class name="ActionsClass_Practice.Example9_KeyBoardAction">
         <methods>
-          <include name="TC1"/>
+          <include name="keyboard"/>
         </methods>
-      </class> <!-- TestNG.example5_TestNGKeyword4_Timeouts -->
+      </class> <!-- ActionsClass_Practice.Example9_KeyBoardAction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -25,9 +25,11 @@ public class Example9_KeyBoardAction
 		Actions act = new Actions(driver);
 		
 		//ctrl+A
-		act.keyDown(Keys.CONTROL).perform();
-		act.sendKeys("a").perform();
-		act.keyUp(Keys.CONTROL).perform();
+		//act.keyDown(Keys.CONTROL).perform();
+		//act.sendKeys("a").perform();
+		//act.keyUp(Keys.CONTROL).perform();
+		
+		act.sendKeys(Keys.CONTROL ,"a").perform();
 		
 		//ctrl+C
 		act.keyDown(Keys.CONTROL).perform();

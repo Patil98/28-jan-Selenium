@@ -19,8 +19,7 @@ public class Example2_moveToElement
 		Thread.sleep(2000);
 		
 		WebElement langauge = driver.findElement(By.xpath("//*[@id=\"icp-nav-flyout\"]/span/span[2]/div"));
-		
-		
+	
 		Thread.sleep(3000);
 		
 		Actions act=new Actions(driver);

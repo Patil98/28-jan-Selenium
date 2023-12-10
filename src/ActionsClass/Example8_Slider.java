@@ -15,6 +15,7 @@ public class Example8_Slider
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.jqueryscript.net/demo/Price-Range-Slider-jQuery-UI/");
 		
+		// left slider
 		WebElement slider = driver.findElement(By.xpath("//span[1]"));
 		
 		System.out.println("get location of element: "+slider.getLocation());

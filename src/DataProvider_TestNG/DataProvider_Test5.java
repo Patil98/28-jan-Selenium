@@ -35,7 +35,7 @@ public class DataProvider_Test5
 	}
 	
 	
-	@DataProvider(name="dataset" ,parallel=true)
+	@DataProvider(name="dataset" ,parallel=true , indices={0,1})
 	public Object[][] DataProvider() 
 	{
 		return new Object[][]

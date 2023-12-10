@@ -26,10 +26,7 @@ public class DropDownHandle
 		
 		Actions ac = new Actions(driver);
 		ac.moveToElement(element).click(driver.findElement(By.xpath("//span[text()='Your Recommendations']"))).perform();
-		
-		
-		
-		
+
 	}
 
 }

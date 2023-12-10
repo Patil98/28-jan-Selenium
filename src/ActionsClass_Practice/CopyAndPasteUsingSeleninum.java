@@ -28,8 +28,6 @@ public class CopyAndPasteUsingSeleninum
 		Thread.sleep(3000);
 		driver.findElement(By.name("login")).sendKeys(Keys.ENTER);
 		
-		
-		
 	}
 	
 
