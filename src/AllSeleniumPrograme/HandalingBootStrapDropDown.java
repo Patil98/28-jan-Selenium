@@ -23,7 +23,10 @@ public class HandalingBootStrapDropDown
 		driver.findElement(By.xpath("(//div[@class='dropdown'])[1]")).click();
 
 		List<WebElement> options = driver.findElements(By.xpath("//ul[@class='dropdown1 dropdown-menu']/li"));
+		int size = options.size();
+		System.out.println(size);
         selectoption(options, "Life Insurance");
+        driver.quit();
 		
 
 	}

@@ -52,7 +52,7 @@
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/reactive-streams-1.0.4.jar"/>
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-api-4.11.0.jar" sourcepath="C:/Users/bvp13/.m2/repository/org/seleniumhq/selenium/selenium-api/4.11.0/selenium-api-4.11.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-api-4.11.0-sources.jar"/>
-	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-chrome-driver-4.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-chrome-driver-4.11.0.jar" sourcepath="C:/Users/bvp13/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.11.0/selenium-chrome-driver-4.11.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-chrome-driver-4.11.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-chromium-driver-4.11.0.jar" sourcepath="C:/Users/bvp13/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.11.0/selenium-chromium-driver-4.11.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/selenium/selenium-java-4.11.0/lib/selenium-chromium-driver-4.11.0-sources.jar"/>

@@ -17,9 +17,9 @@ public class FileDowloadExampleUsingRobotClass
 	public void file() throws Exception
 	{
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.bpsc.bih.nic.in/");
+		driver.get("https://bpsc.bihar.gov.in/");
 		
-		driver.findElement(By.xpath("(//a[@class='wbg'])[1]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Sub-divisional Agriculture Office')]")).click();
 		Thread.sleep(3000);
 		
 		Robot rb = new Robot();
@@ -34,6 +34,8 @@ public class FileDowloadExampleUsingRobotClass
 		
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
+		rb.delay(3000);
+		driver.quit();
 		
 	}
 

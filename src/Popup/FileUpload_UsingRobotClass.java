@@ -20,6 +20,8 @@ public class FileUpload_UsingRobotClass
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/upload");
 		driver.manage().window().maximize();
+		
+		
 
 		WebElement ChooseFile = driver.findElement(By.id("file-upload"));
 

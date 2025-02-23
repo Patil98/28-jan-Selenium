@@ -26,6 +26,7 @@ public class Example7_SendKeys
 		Thread.sleep(2000);
 		
 		act.sendKeys(Keys.ENTER).perform();
+	
 		
 		//driver.findElement(By.xpath("(//input[@type='submit'])[1]")).click();
 	}

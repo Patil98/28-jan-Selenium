@@ -1,9 +1,7 @@
 package Selenium4_RelativeLocators;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.locators.RelativeLocator;
 import org.testng.annotations.Test;
@@ -16,6 +14,7 @@ public class RelativeLocators
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
+
 
 		//below
 		driver.findElement(RelativeLocator.with(By.tagName("input")).below(By.id("email"))).sendKeys("Patil@123");
@@ -35,6 +34,6 @@ public class RelativeLocators
 		driver.findElement(By.xpath("(//a[@role='button'])[2]")).click();
 		Thread.sleep(2000);
 		driver.findElement(RelativeLocator.with(By.tagName("input")).toRightOf(By.name("firstname"))).sendKeys("patil");
-	
+
 	}
 }

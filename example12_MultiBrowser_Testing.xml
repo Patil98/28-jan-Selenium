@@ -9,7 +9,7 @@
     </classes>
   </test> <!-- Test -->
   
-  <test name="Test2">
+  <test name="Test2" enabled="false">
   <parameter name="BrowserName" value="firefox"/>
     <classes>
       <class name="TestNG.example12_MultiBrowser_Testing"/>

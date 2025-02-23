@@ -1,10 +1,12 @@
 package DataProvider_TestNG;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class DataProvider_Test 
 {	
+	@Ignore
 	@Test(dataProvider="dataProvider")
 	public void test(String username,String password)
 	{

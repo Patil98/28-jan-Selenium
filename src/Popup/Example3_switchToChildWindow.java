@@ -6,6 +6,7 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Example3_switchToChildWindow
@@ -29,7 +30,7 @@ public class Example3_switchToChildWindow
 		
 		//switch to child window
 		driver.switchTo().window(childwindowid);     //String childWindowID
-      	
+		
 		//click on "Training" link from childWindow
 		driver.findElement(By.xpath("//*[@id=\"primary-menu\"]/li[7]/a")).click();
 

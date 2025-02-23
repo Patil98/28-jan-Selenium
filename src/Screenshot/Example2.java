@@ -2,6 +2,7 @@ package Screenshot;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -18,6 +19,7 @@ public class Example2
 
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.facebook.com/");
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(50));
 
 		String rs = RandomString.make(2);         
 

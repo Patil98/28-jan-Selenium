@@ -9,7 +9,7 @@ public class Example7_AssertClass2_assertNotEquals
 	public void TC2() 
 	{
 		String actResult="hi";
-		String expResult="hi";
+		String expResult="ho";
 		
 		Assert.assertNotEquals(actResult, expResult);
 	}

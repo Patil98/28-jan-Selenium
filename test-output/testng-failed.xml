@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ActionsClass_Practice.Example9_KeyBoardAction">
+      <class name="Popup_Practice.FileDowloadExampleUsingRobotClass">
         <methods>
-          <include name="keyboard"/>
+          <include name="file"/>
         </methods>
-      </class> <!-- ActionsClass_Practice.Example9_KeyBoardAction -->
+      </class> <!-- Popup_Practice.FileDowloadExampleUsingRobotClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

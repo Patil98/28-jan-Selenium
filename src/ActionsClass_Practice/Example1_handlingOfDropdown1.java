@@ -1,7 +1,5 @@
 package ActionsClass_Practice;
 
-import java.sql.Driver;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,9 +16,8 @@ public class Example1_handlingOfDropdown1
 
 		driver.manage().window().maximize();
 
-		driver.findElement(By.xpath("/html/body/div[2]/div/div/button")).click();
-
-		WebElement list = driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[2]/div/div/div[4]/a/div[1]/div/img"));
+		
+		WebElement list = driver.findElement(By.xpath("//span[text()='Electronics']"));
 
 		Actions act=new Actions(driver);
 
@@ -29,7 +26,8 @@ public class Example1_handlingOfDropdown1
 		Thread.sleep(2000);
 
 		driver.findElement(By.xpath("//a[text()='Wired Headphones']")).click();
-
+		Thread.sleep(2000);
+		driver.quit();
 
 	}
 

@@ -17,6 +17,7 @@ public class Arguments8_disableNotification
 		
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
+		driver.quit();
 		
 	}
 

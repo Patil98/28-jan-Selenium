@@ -21,7 +21,7 @@ public class Handle_Cookie
 		System.out.println("Before adding size:" + allcookies.size());
 
 		for (Cookie ck : allcookies)
-		{
+		{  
 			System.out.println(ck.getName() + ":" + ck.getValue());
 		}
 

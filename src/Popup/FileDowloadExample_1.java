@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class FileDowloadExample_1 
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws InterruptedException
 	{
 		ChromeOptions options=new ChromeOptions();
 		HashMap<String, Object> prefs=new HashMap<>();
@@ -18,9 +18,10 @@ public class FileDowloadExample_1
 		
 		WebDriver driver=new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get("https://www.bpsc.bih.nic.in/");
-		
-		driver.findElement(By.xpath("(//a[@class='wbg'])[1]")).click();
+		driver.get("https://bpsc.bihar.gov.in/");
+		driver.findElement(By.xpath("//a[contains(text(),'One Disabled (MD) Candidate included in Provisiona')]")).click();
+		Thread.sleep(5000);
+		driver.quit();
 		
 	}
 

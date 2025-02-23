@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Demo1 
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) throws InterruptedException 
 	{
 		//launch browser
 		WebDriver driver=new ChromeDriver();
@@ -53,9 +53,12 @@ public class Demo1
 			} 
 			else 
 			{
-				driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();
+				//driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click(); --> next button
+				driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click(); 
 			}
 
 		}
+		Thread.sleep(5000);
+		driver.quit();
 	}
 }

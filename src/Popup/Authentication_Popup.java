@@ -23,7 +23,6 @@ public class Authentication_Popup
 		String URL = "https://admin:admin@the-internet.herokuapp.com/basic_auth";
 		driver.get(URL);
 
-
 		String title = driver.getTitle();
 		System.out.println("The page title is "+title);
 		Thread.sleep(2000);

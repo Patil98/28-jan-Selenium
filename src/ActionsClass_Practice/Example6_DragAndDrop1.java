@@ -18,9 +18,7 @@ public class Example6_DragAndDrop1
 		
 		Actions act=new Actions(driver);
 		act.dragAndDrop(src, dest).perform();
-		
-		
-		
+				
 	}
 
 }

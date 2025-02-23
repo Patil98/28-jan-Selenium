@@ -1,19 +1,16 @@
 package Popup;
 
-import java.util.HashMap;
+
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
 public class FileDowloadExample_3 
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws InterruptedException
 	{
 
 		FirefoxOptions options=new FirefoxOptions();
@@ -26,10 +23,11 @@ public class FileDowloadExample_3
 
 		WebDriver driver=new FirefoxDriver(options);
 		driver.manage().window().maximize();
-		driver.get("https://www.bpsc.bih.nic.in/");
+		driver.get("https://bpsc.bihar.gov.in/");
 
-		driver.findElement(By.xpath("(//a[@class='wbg'])[1]")).click();
-
+		driver.findElement(By.xpath("//a[contains(text(),'Assistant Prosecution Officer')]")).click();
+		Thread.sleep(5000);
+		driver.quit();
 	}
 
 }

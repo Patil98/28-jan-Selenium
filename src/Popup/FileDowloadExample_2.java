@@ -8,7 +8,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 
 public class FileDowloadExample_2
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws InterruptedException
 	{
 		EdgeOptions options=new EdgeOptions();
 		HashMap<String, Object> prefs=new HashMap<>();
@@ -18,10 +18,11 @@ public class FileDowloadExample_2
 
 		WebDriver driver=new EdgeDriver(options);
 		driver.manage().window().maximize();
-		driver.get("https://www.bpsc.bih.nic.in/");
+		driver.get("https://bpsc.bihar.gov.in/");
 
-		driver.findElement(By.xpath("(//a[@class='wbg'])[1]")).click();
-
+		driver.findElement(By.xpath("//a[contains(text(),'Assistant Prosecution Officer')]")).click();
+		Thread.sleep(5000);
+		driver.quit();
 	}
 }
 

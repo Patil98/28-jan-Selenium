@@ -13,16 +13,10 @@ public class Example2_DeSelectOptionFromMultiSelectbaleListbox1
 	{
 		
 		WebDriver driver =new ChromeDriver();
-		
 		driver.get("file:///C:/Users/bvp13/OneDrive/Documents/basic%20html%20coding/multiselect.html");
-		
-		
 		WebElement country = driver.findElement(By.xpath("//select[@id='1234']"));
 		
-		
-		
 		Select s=new Select(country);
-		
 		
 		s.selectByIndex(0);
 		s.selectByIndex(1);
@@ -31,7 +25,6 @@ public class Example2_DeSelectOptionFromMultiSelectbaleListbox1
 		Thread.sleep(2000);
 		
 		s.deselectByIndex(0);
-		
 		s.deselectByVisibleText("Pak");
 		
 	//	s.deselectByValue("3");

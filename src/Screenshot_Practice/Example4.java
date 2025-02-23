@@ -3,6 +3,7 @@ package Screenshot_Practice;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -15,8 +16,7 @@ public class Example4
 {
 	
 	public static void main(String[] args) throws IOException 
-	{
-		
+	{	
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().window().maximize();
@@ -28,6 +28,7 @@ public class Example4
 		
 	    File dest=new File("C:\\\\Users\\\\bvp13\\\\OneDrive\\\\Documents\\\\Screenshot\\\\abc"+rs+".jpg");
 	    FileHandler.copy(src, dest);
+	   
 		
 	}
 

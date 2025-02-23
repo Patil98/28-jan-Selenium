@@ -1,5 +1,7 @@
 package ActionsClass_Practice;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -14,10 +16,11 @@ public class Example7
 	{
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://the-internet.herokuapp.com/key_presses");
 		
          Actions ac = new Actions(driver);
-        ac.keyDown(Keys.ENTER).perform();
+        ac.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
   
 	}
 

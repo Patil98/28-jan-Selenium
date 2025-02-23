@@ -14,27 +14,29 @@ public class Example8_Slider
 	{
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.jqueryscript.net/demo/Price-Range-Slider-jQuery-UI/");
-		
+
 		// left slider
 		WebElement slider = driver.findElement(By.xpath("//span[1]"));
-		
+
 		System.out.println("get location of element: "+slider.getLocation());
 		System.out.println("get heigth and width of element: "+slider.getSize());
-		
+
 		Thread.sleep(3000);
-		
+
 		Actions act = new Actions(driver);
 		// left slider
 		act.dragAndDropBy(slider, 100, 250).perform();;
-		
+
 		// rigth slider
 		WebElement slide = driver.findElement(By.xpath("//span[2]"));
-		
+
 		System.out.println("get location of element: "+slide.getLocation());
 		System.out.println("get heigth and width of element: "+slide.getSize());
-		
+
 		act.dragAndDropBy(slide, -150, 0).perform();
 		
+		driver.quit();
+
 	}
 
 }
